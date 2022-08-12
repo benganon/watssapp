@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+body {
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    /* filter: saturate(200%); */
+    filter: brightness(1.3);
+    background: linear-gradient(7deg, rgba(148, 199, 244, 0.817), rgba(216, 230, 243, 0.857));
+    animation: fondo 2s infinite;
+    border: solid 7px black;
+}
+
+@keyframes fondo {
+    0% {
+        background: linear-gradient(7deg, rgba(140, 209, 255, 0.817), rgba(209, 240, 246, 0.857));
+    }
+    25% {
+        background: linear-gradient(7deg, rgba(226, 244, 247, 0.857), rgba(115, 172, 243, 0.817));
+    }
+    50% {
+        background: linear-gradient(7deg, rgba(138, 199, 232, 0.857), rgba(143, 188, 243, 0.817));
+    }
+    75% {
+        background: linear-gradient(7deg, rgba(213, 229, 244, 0.817), rgba(145, 171, 245, 0.857));
+    }
+    100% {
+        background: linear-gradient(7deg, rgba(137, 190, 247, 0.817), rgba(212, 226, 241, 0.857));
+    }
+}
+
+.imagen {
+    filter: contrast(1.5);
+    text-align: center;
+    animation: imagen .90s infinite;
+}
+
+@keyframes imagen {
+    0% {
+        filter: contrast(1.3)
+    }
+    50% {
+        filter: contrast(1.7)
+    }
+    100% {
+        filter: contrast(1.3)
+    }
+}
+
+.imagen img {
+    width: 54%;
+    filter: drop-shadow(0px 0px 1px rgb(161, 3, 3))drop-shadow(0px 0px 1px rgb(143, 2, 2))drop-shadow(0px 0px 2px rgb(0, 0, 0))drop-shadow(0px 0px 2px rgb(0, 0, 0));
+}
+
+.audio {
+    text-align: center;
+}
+
+.audio audio {
+    outline: none;
+    border-radius: 39px;
+    border: 5px solid rgb(255, 0, 217);
+    box-shadow: 0px 0px 8px 0px rgb(255, 0, 217);
+    animation: audio 1s infinite;
+}
+
+@keyframes audio {
+    0% {
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px 0px rgb(255, 255, 255), 0px 0px 8px 0px rgb(255, 255, 255);
+    }
+    50% {
+        border: 5px solid rgb(251, 169, 239);
+        box-shadow: 0px 0px 8px 0px rgb(247, 165, 235), 0px 0px 8px 0px rgb(245, 164, 233);
+    }
+    100% {
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 9px 0px rgb(255, 255, 255), 0px 0px 9px 0px rgb(255, 255, 255);
+    }
+}
+
+.parrafos {
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    text-shadow: 0px 0px 9px rgb(141, 240, 133), 0px 0px 9px rgb(141, 240, 133);
+    border-radius: 17px;
+    border: 2px solid rgb(243, 216, 255);
+    box-shadow: 0px 0px 9px 0px rgb(235, 209, 247);
+    animation: parrafo 10s infinite;
+}
+
+@keyframes parrafo {
+    0% {
+        border: 5px solid rgb(247, 204, 255);
+        box-shadow: 0px 0px 8px 0px rgb(243, 206, 252);
+    }
+    50% {
+        border: 5px solid rgb(245, 251, 169);
+        box-shadow: 0px 0px 8px 0px rgb(245, 251, 169), 0px 0px 8px 0px rgb(245, 251, 169);
+    }
+    100% {
+        border: 5px solid rgb(240, 193, 246);
+        box-shadow: 0px 0px 9px 0px rgb(249, 225, 255);
+    }
+}
+
+.video {
+    text-align: center;
+}
+
+.video video {
+    outline: none;
+    width: 50%;
+    border: 4px solid rgb(247, 215, 250);
+    box-shadow: 0px 0px 13px 0px rgb(249, 222, 247);
+    border-radius: 20px;
+    animation: video 1s infinite;
+}
+
+@keyframes video {
+    0% {
+        border: 5px solid rgb(249, 214, 255);
+        box-shadow: 0px 0px 8px 0px rgb(250, 229, 255);
+    }
+    50% {
+        border: 5px solid rgb(236, 166, 250);
+        box-shadow: 0px 0px 8px 0px rgb(237, 162, 247), 0px 0px 8px 0px rgb(238, 185, 238);
+    }
+    100% {
+        border: 5px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 9px 0px rgb(245, 229, 249);
+    }
+}
+
+i {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0px 0px 19px 0px rgb(186, 6, 192);
+    box-shadow: inset 0 -1px 1px rgb(198, 22, 204);
+    top: -17px;
+    animation: nieve linear infinite;
+}
+
+@keyframes nieve {
+    0% {
+        top: -17px;
+    }
+    100% {
+        top: calc(150vh + 50px);
+    }
+}
